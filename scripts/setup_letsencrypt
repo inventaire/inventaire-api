@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+sudo cp ./init-config /etc/nginx/sites-enabled/default
+
+/opt/letsencrypt/letsencrypt-auto certonly --webroot -w /var/www/html -d api.inventaire.io
+# generating a dhparam as required later in config.nginx
+sudo openssl dhparam -out /etc/letsencrypt/live/api.inventaire.io/dhparams.pem 2048
+# now if everything went well and we got the cert, load the real nginx config
+sudo cp ~/machine/nginx/default /etc/nginx/sites-enabled/default
