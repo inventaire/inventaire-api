@@ -1,5 +1,6 @@
 #!/usr/bin/env zsh
-npm run handlebars && gulp && cp src/swagger.json dist/swagger.json
+npm run handlebars && gulp &&
+cat src/swagger.json | scripts/uglify_json.js > dist/swagger.json
 
 addFile(){
   cat $1 >> $2
