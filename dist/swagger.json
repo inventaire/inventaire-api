@@ -1,0 +1,92 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Inventaire API",
+        "description": "Interact with inventaire.io",
+        "version": "1.0.0"
+    },
+    "host": "inventaire.io",
+    "schemes": [
+        "https"
+    ],
+    "basePath": "/api",
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/items?action=by-ids": {
+            "get": {
+                "summary": "Items",
+                "description": "Instances of books or editons of books\n",
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "Pipe-separated items ids.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Limit the amount of items returned.",
+                        "required": false,
+                        "type": "integer"
+                    }
+                ],
+                "tags": [
+                    "Items"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An object with an array of items",
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "items": {
+                                    "$ref": "#/definitions/Item"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "Unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Item": {
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "description": "Unique identifier representing an item"
+                },
+                "_rev": {
+                    "type": "string",
+                    "description": "Revision identifier"
+                }
+            }
+        },
+        "Error": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "fields": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
