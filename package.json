@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "main": "dist/swagger-ui.js",
   "scripts": {
-    "build": "npm run handlebars && gulp",
+    "build": "./scripts/build",
     "handlebars": "handlebars ./src/main/template -f ./src/main/template/templates.js && gulp handlebars",
     "serve": "gulp serve",
     "prejshint": "gulp",
