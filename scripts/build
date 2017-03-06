@@ -2,11 +2,6 @@
 npm run handlebars && gulp &&
 cat src/swagger.json | scripts/uglify_json.js > dist/swagger.json
 
-addFile(){
-  cat $1 >> $2
-  echo ";" >> $2
-}
-
 renameFileWithCacheBuster(){
   fileBase=$1
   ext=$2
@@ -18,18 +13,15 @@ renameFileWithCacheBuster(){
 }
 
 # CSS
-cssBuildBase=dist/css/build
-rm -f dist/css/build*
-
-addFile dist/css/typography.css $cssBuildBase
-addFile dist/css/reset.css $cssBuildBase
-addFile dist/css/screen.css $cssBuildBase
-addFile dist/css/reset.css $cssBuildBase
-addFile dist/css/print.css $cssBuildBase
-
-renameFileWithCacheBuster $cssBuildBase 'css'
+# Couldn't make concatenated CSS files work
+gzip -k9 dist/css/*.css
 
 # JS
+addFile(){
+  cat $1 >> $2
+  echo ";" >> $2
+}
+
 jsBuildBase=dist/build
 rm -f dist/build*
 
