@@ -15,3 +15,11 @@ node_modules/*
 /nbproject/private/
 dist/specs/
 test/specs/local/
+dist/css/print.css
+dist/css/screen.css
+dist/lib/jsoneditor.min.js
+dist/swagger-ui.js
+dist/swagger-ui.min.js
+src/main/html/css/print.css
+src/main/html/css/screen.css
+src/main/template/templates.js
