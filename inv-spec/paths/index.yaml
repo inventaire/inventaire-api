@@ -1,0 +1,35 @@
+/items?action=by-ids:
+  get:
+    summary: Items
+    description: |
+      Instances of books or editons of books
+    parameters:
+      - name: ids
+        in: query
+        description: Pipe-separated items ids.
+        required: true
+        type: string
+      - name: limit
+        in: query
+        required: false
+        type: integer
+      - name: offset
+        in: query
+        required: false
+        type: integer
+    tags:
+      - Items
+    responses:
+      200:
+        description: An object with an array of items
+        schema:
+          type: object
+          properties:
+            items:
+              $ref: '#/definitions/Item'
+            users:
+              $ref: '#/definitions/User'
+      default:
+        description: Unexpected error
+        schema:
+          $ref: '#/definitions/Error'

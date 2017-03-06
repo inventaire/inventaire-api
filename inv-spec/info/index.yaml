@@ -1,0 +1,3 @@
+title: Inventaire API
+description: Interact with [inventaire.io](https://inventaire.io) HTTP API
+version: "1.0.0"

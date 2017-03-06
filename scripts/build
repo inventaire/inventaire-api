@@ -1,6 +1,10 @@
 #!/usr/bin/env zsh
+ROOT=$(pwd)
+
 npm run handlebars && gulp &&
-cat src/swagger.json | scripts/uglify_json.js > dist/swagger.json
+
+# JSON SPEC
+cd inv-spec && multi-file-swagger index.yaml | ../scripts/uglify_json.js > ../dist/inv-spec.json && cd $ROOT
 
 renameFileWithCacheBuster(){
   basePath=$1

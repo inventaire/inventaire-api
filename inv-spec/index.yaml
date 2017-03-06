@@ -1,0 +1,17 @@
+swagger: '2.0'
+info:
+  $ref: ./info/index.yaml
+paths:
+  $ref: ./paths/index.yaml
+definitions:
+  $ref: ./definitions/index.yaml
+
+# the domain of the service
+host: inventaire.io
+# array of all schemes that your API supports
+schemes:
+  - https
+# will be prefixed to all paths
+basePath: /api
+produces:
+  - application/json

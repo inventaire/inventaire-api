@@ -59,6 +59,7 @@
     "karma-sinon-chai": "1.1.0",
     "less": "^2.4.0",
     "mocha": "^2.1.0",
+    "multi-file-swagger": "^2.0.0",
     "phantomjs": "1.9.19",
     "run-sequence": "^1.2.2",
     "selenium-webdriver": "^2.45.0",

@@ -1,0 +1,6 @@
+User:
+  $ref: ./user.yaml
+Item:
+  $ref: ./item.yaml
+Error:
+  $ref: ./error.yaml
