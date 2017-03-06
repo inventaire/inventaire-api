@@ -25,3 +25,5 @@ src/main/html/css/screen.css
 src/main/template/templates.js
 dist/build*
 dist/css/build*
+dist/swagger.json
+
