@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+while true
+do
+  inotifywait -r inv-spec -e modify &&
+  npm run update-spec &&
+  echo 'updated specs!'
+done

@@ -1,10 +1,7 @@
 #!/usr/bin/env zsh
 ROOT=$(pwd)
 
-npm run handlebars && gulp &&
-
-# JSON SPEC
-cd inv-spec && multi-file-swagger index.yaml | ../scripts/uglify_json.js > ../dist/inv-spec.json && cd $ROOT
+npm run handlebars && gulp && npm run update-spec
 
 renameFileWithCacheBuster(){
   basePath=$1
@@ -21,6 +18,7 @@ renameFileWithCacheBuster(){
 
 # CSS
 # Couldn't make concatenated CSS files work
+# But it's fine as they are used for different media
 renameFileWithCacheBuster 'dist/css' 'typography' 'css'
 renameFileWithCacheBuster 'dist/css' 'reset' 'css'
 renameFileWithCacheBuster 'dist/css' 'screen' 'css'

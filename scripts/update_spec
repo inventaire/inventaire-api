@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+cd inv-spec
+multi-file-swagger index.yaml | ../scripts/uglify_json.js > ../dist/inv-spec.json
+sed -i "s@MASTER@https://github.com/inventaire/inventaire/blob/master@g" ../dist/inv-spec.json
+cd ..

@@ -19,7 +19,9 @@
     "prejshint": "gulp",
     "jshint": "jshint .",
     "pretest": "npm run jshint",
-    "test": "mocha"
+    "test": "mocha",
+    "update-spec": "./scripts/update_spec",
+    "watch-spec": "./scripts/watch_spec"
   },
   "repository": {
     "type": "git",
