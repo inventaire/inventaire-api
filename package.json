@@ -21,7 +21,8 @@
     "pretest": "npm run jshint",
     "test": "mocha",
     "update-spec": "./scripts/update_spec",
-    "watch-spec": "./scripts/watch_spec"
+    "watch-spec": "./scripts/watch_spec",
+    "deploy": "rsync -ahz --delete --progress ./dist/* $USER@$HOST:~/swagger"
   },
   "repository": {
     "type": "git",
