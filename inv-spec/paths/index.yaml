@@ -1,35 +1,10 @@
 /items?action=by-ids:
-  get:
-    summary: Items
-    description: |
-      Instances of books or editons of books
-    parameters:
-      - name: ids
-        in: query
-        description: Pipe-separated items ids.
-        required: true
-        type: string
-      - name: limit
-        in: query
-        required: false
-        type: integer
-      - name: offset
-        in: query
-        required: false
-        type: integer
-    tags:
-      - Items
-    responses:
-      200:
-        description: An object with an array of items
-        schema:
-          type: object
-          properties:
-            items:
-              $ref: '#/definitions/Item'
-            users:
-              $ref: '#/definitions/User'
-      default:
-        description: Unexpected error
-        schema:
-          $ref: '#/definitions/Error'
+  $ref: ./items/by-ids.yaml
+/items?action=by-users:
+  $ref: ./items/by-users.yaml
+/items?action=by-entities:
+  $ref: ./items/by-entities.yaml
+/items?action=last-public:
+  $ref: ./items/last-public.yaml
+/items?action=nearby:
+  $ref: ./items/nearby.yaml

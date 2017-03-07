@@ -1,0 +1,20 @@
+get:
+  summary: Items by entities URIs
+  parameters:
+    - name: uris
+      in: query
+      description: Pipe-separated entities uris
+      required: false
+      type: string
+      x-example: wd:Q3203603|isbn:9782290349229|inv:d59e3e64f92c6340fbb10c5dcf437d86
+    - $ref: ./partials/limit.yaml
+    - $ref: ./partials/offset.yaml
+  tags:
+    - Items
+  externalDocs:
+    description: server/controllers/items/by_entities.coffee
+    uri: MASTER/server/controllers/items/by_entities.coffee
+
+  responses:
+    '200':
+      $ref: ./partials/200.yaml

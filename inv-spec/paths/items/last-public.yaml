@@ -1,0 +1,17 @@
+get:
+  summary: Last public items
+  parameters:
+    - $ref: ./partials/limit.yaml
+    - $ref: ./partials/offset.yaml
+    - name: assert-image
+      description: return only items with an image
+      in: query
+      required: false
+      type: boolean
+
+  tags:
+    - Items
+
+  responses:
+    '200':
+      $ref: ./partials/200.yaml

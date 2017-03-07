@@ -1,0 +1,17 @@
+get:
+  summary: Items by users ids
+  parameters:
+    - name: users
+      in: query
+      description: Pipe-separated users ids
+      required: false
+      type: string
+      x-example: 6a65aa87e68e161650bf7741ad000af6
+    - $ref: ./partials/limit.yaml
+    - $ref: ./partials/offset.yaml
+  tags:
+    - Items
+
+  responses:
+    '200':
+      $ref: ./partials/200.yaml

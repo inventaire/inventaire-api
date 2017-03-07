@@ -1,0 +1,4 @@
+name: limit
+in: query
+required: false
+type: integer

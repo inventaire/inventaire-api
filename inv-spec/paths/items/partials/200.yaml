@@ -1,0 +1,42 @@
+schema:
+  description: An object with an array of items
+  type: object
+  properties:
+    items:
+      type: array
+      items:
+        $ref: "#/definitions/Item"
+    users:
+      type: array
+      items:
+        $ref: "#/definitions/User"
+examples:
+  items:
+  - _id: 278bbf4d704ee3c8d587fd73a885cca3
+    _rev: 5-3412ee94dba8ab756a26818d9b24c1db
+    title: L'homme aux cercles bleus
+    entity: isbn:9782290349229
+    transaction: lending
+    pictures: []
+    owner: 6a65aa87e68e161650bf7741ad000af6
+    created: 1486921727394
+    snapshot:
+      entity:image: "/ipfs/Qma2fCfc8oUvre1XP89AiNYG9EEVye5kXFPVUBP5zyncFh"
+      entity:authors: Fred Vargas
+    updated: 1488890952189
+    details: ''
+  total: 1
+  offset: 0
+  users:
+  - _id: 6a65aa87e68e161650bf7741ad000af6
+    username: max
+    picture: "/img/f34ce574a13c9e27f7a983e0159aa23bedcddba9.jpg"
+    bio: 'hello! I''m developing inventaire.io, hope you like it!! for anything: max@inventaire.io'
+    position:
+    - 45.78346187852671
+    - 4.88439917564392
+    created: 1422958293987
+    snapshot:
+      public:
+        items:count: 10
+        items:last-add: 1488890952222

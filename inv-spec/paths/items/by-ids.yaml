@@ -1,0 +1,15 @@
+get:
+  summary: Items by ids
+  parameters:
+    - name: ids
+      in: query
+      description: Pipe-separated items ids
+      required: false
+      type: string
+      x-example: 278bbf4d704ee3c8d587fd73a885cca3
+  tags:
+    - Items
+
+  responses:
+    '200':
+      $ref: ./partials/200.yaml

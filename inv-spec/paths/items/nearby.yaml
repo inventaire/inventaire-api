@@ -1,0 +1,12 @@
+get:
+  summary: Last nearby items
+  description: Based on the logged in user position
+  parameters:
+    - $ref: ./partials/limit.yaml
+    - $ref: ./partials/offset.yaml
+  tags:
+    - Items
+
+  responses:
+    '200':
+      $ref: ./partials/200.yaml

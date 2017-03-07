@@ -2,7 +2,57 @@ type: object
 properties:
   _id:
     type: string
+    format: uuid
     description: Unique identifier representing an item
   _rev:
     type: string
+    format: uuid
     description: Revision identifier
+  username:
+    type: string
+  picture:
+    type: string
+    format: url
+  bio:
+    type: string
+  position:
+    type: array
+    items:
+      type: number
+      format: float
+    x-example:
+      - 12.3456713125
+      - -42.3456713125
+  created:
+    type: number
+    format: date
+  admin:
+    type: boolean
+    description: User with admin rights
+  special:
+    type: boolean
+    description: Pseudo user used internally by the server
+  snapshot:
+    type: object
+    fields:
+      private:
+        $ref: '#/partials/snapshot-part'
+      network:
+        $ref: '#/partials/snapshot-part'
+      public:
+        $ref: '#/partials/snapshot-part'
+  language:
+    type: string
+    format: lang
+    description: (private)
+
+partials:
+  snapshot-part:
+    type: object
+    fields:
+      items:count:
+        type: number
+        format: integer
+      items:last-add:
+        type: number
+        format: date
