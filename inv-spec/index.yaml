@@ -18,8 +18,7 @@ info:
 
   version: "1.0.0"
 # the domain of the service
-# host: inventaire.io
-host: localhost:3006
+host: inventaire.io
 # array of all schemes that your API supports
 schemes:
   - https
