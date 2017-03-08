@@ -25,13 +25,13 @@ renameFileWithCacheBuster 'dist/css' 'screen' 'css'
 renameFileWithCacheBuster 'dist/css' 'print' 'css'
 
 # JS
-addJsFile(){
-  cat $1 >> dist/build.js
-  printf ";" >> dist/build.js
-}
+mkdir -p dist/js
+jsBuildBase=dist/js/build
 
-jsBuildBase=dist/build
-rm -f dist/build*
+addJsFile(){
+  cat $1 >> ${jsBuildBase}.js
+  printf ";" >> ${jsBuildBase}.js
+}
 
 addJsFile dist/lib/object-assign-pollyfill.js
 addJsFile dist/lib/jquery-1.8.0.min.js
@@ -48,4 +48,4 @@ addJsFile dist/lib/jsoneditor.min.js
 addJsFile dist/lib/marked.js
 addJsFile dist/lib/swagger-oauth.js
 
-renameFileWithCacheBuster 'dist' 'build' 'js'
+renameFileWithCacheBuster 'dist/js' 'build' 'js'
