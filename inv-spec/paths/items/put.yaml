@@ -1,0 +1,53 @@
+summary: Create or update an item (requires to be authentified)
+parameters:
+  - name: _id
+    in: body
+    description: An existing item id or 'new'
+    required: true
+    type: string
+    x-example: 278bbf4d704ee3c8d587fd73a885cca3
+  - name: title
+    in: body
+    description: The item title
+    required: true
+    type: string
+    x-example: some book title
+  - name: entity
+    in: body
+    description: The associated book entity (work or edition) uri
+    required: true
+    type: string
+    x-example: isbn:9782253138938
+  - name: transaction
+    in: body
+    description: 'The item transaction: one of giving, lending, selling, or inventorying. Defaults to inventorying.'
+    required: false
+    type: string
+    default: inventorying
+    x-example: lending
+  - name: listing
+    in: body
+    description: 'The item visibility listing: one of private, network, or public. Defaults to private.'
+    required: false
+    type: string
+    default: private
+    x-example: network
+  - name: details
+    in: body
+    description: 'Free text to be visible by anyone allowed to see the item'
+    required: false
+    type: string
+    x-example: What a great book. Available for lending if you take care of it.
+  - name: notes
+    in: body
+    description: 'Free text that is visible only by the item owner'
+    required: false
+    type: string
+    x-example: In the living room bookshelf
+
+tags:
+  - Items
+
+responses:
+  '200':
+    $ref: ./partials/200.yaml

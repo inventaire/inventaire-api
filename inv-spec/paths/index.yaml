@@ -1,3 +1,8 @@
+/items:
+  put:
+    $ref: ./items/put.yaml
+  delete:
+    $ref: ./items/delete.yaml
 /items?action=by-ids:
   $ref: ./items/by-ids.yaml
 /items?action=by-users:

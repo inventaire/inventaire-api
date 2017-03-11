@@ -1,0 +1,14 @@
+summary: Delete an item (requires to be authentified)
+parameters:
+  - name: id
+    in: query
+    description: An existing item id
+    required: true
+    type: string
+    x-example: 278bbf4d704ee3c8d587fd73a885cca3
+tags:
+  - Items
+
+responses:
+  '200':
+    $ref: ./partials/200.yaml
