@@ -1,0 +1,18 @@
+get:
+  summary: Get entities by URIs
+  parameters:
+    - name: uris
+      in: query
+      description: A title, author, or ISBN
+      required: true
+      type: string
+      x-example: wd:Q3203603|isbn:9782290349229|inv:d59e3e64f92c6340fbb10c5dcf437d86
+    - name: refresh
+      in: query
+      description: 'Request non-cached data'
+      required: false
+      type: boolean
+      x-example: false
+      default: false
+  tags:
+    - Entities

@@ -1,4 +1,6 @@
-summary: Create or update an item (requires to be authentified)
+summary: Create or update an item
+description: |
+  **Requires to be [authentified](/#!Auth/post_auth_action_login)**
 parameters:
   - name: _id
     in: body

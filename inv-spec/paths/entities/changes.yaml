@@ -1,0 +1,12 @@
+get:
+  summary: Get entities last changes
+  parameters:
+    - name: since
+      in: query
+      description: Sequence number
+      required: false
+      type: number
+      format: integer
+      x-example: 1245
+  tags:
+    - Entities

@@ -7,8 +7,8 @@ get:
       required: false
       type: string
       x-example: 6a65aa87e68e161650bf7741ad000af6
-    - $ref: ./partials/limit.yaml
-    - $ref: ./partials/offset.yaml
+    - $ref: ../partials/limit.yaml
+    - $ref: ../partials/offset.yaml
   tags:
     - Items
 

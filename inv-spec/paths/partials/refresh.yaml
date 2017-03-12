@@ -1,0 +1,7 @@
+name: refresh
+in: query
+description: 'Request non-cached data'
+required: false
+type: boolean
+x-example: false
+default: false

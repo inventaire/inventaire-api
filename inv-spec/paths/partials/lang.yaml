@@ -1,0 +1,6 @@
+name: lang
+in: query
+description: 2-letters language code
+required: true
+type: string
+x-example: fr

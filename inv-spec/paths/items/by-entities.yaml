@@ -7,8 +7,8 @@ get:
       required: false
       type: string
       x-example: wd:Q3203603|isbn:9782290349229|inv:d59e3e64f92c6340fbb10c5dcf437d86
-    - $ref: ./partials/limit.yaml
-    - $ref: ./partials/offset.yaml
+    - $ref: ../partials/limit.yaml
+    - $ref: ../partials/offset.yaml
   tags:
     - Items
   externalDocs:

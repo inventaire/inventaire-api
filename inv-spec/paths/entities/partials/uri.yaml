@@ -1,0 +1,6 @@
+name: uri
+in: query
+description: An entity URI.
+required: true
+type: string
+x-example: wd:Q3203603

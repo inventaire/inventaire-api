@@ -13,3 +13,35 @@
   $ref: ./items/last-public.yaml
 /items?action=nearby:
   $ref: ./items/nearby.yaml
+
+/entities?action=search:
+  $ref: ./entities/search.yaml
+/entities?action=by-uris:
+  $ref: ./entities/by-uris.yaml
+/entities?action=changes:
+  $ref: ./entities/changes.yaml
+/entities?action=reverse-claims:
+  $ref: ./entities/reverse-claims.yaml
+# /entities?action=author-works:
+#   $ref: ./entities/author-works.yaml
+# /entities?action=serie-parts:
+#   $ref: ./entities/serie-parts.yaml
+# /entities?action=history:
+#   $ref: ./entities/history.yaml
+
+/entities?action=create:
+  $ref: ./entities/create.yaml
+# /entities?action=exists-or-create-from-seed:
+  # $ref: ./entities/exists-or-create-from-seed.yaml
+
+/entities?action=update-label:
+  $ref: ./entities/update-label.yaml
+
+/entities?action=update-claim:
+  $ref: ./entities/update-claim.yaml
+
+# /entities?action=merge:
+#   $ref: ./entities/merge.yaml
+
+# /entities?action=revert-merge:
+#   $ref: ./entities/revert-merge.yaml

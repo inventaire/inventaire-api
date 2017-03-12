@@ -1,0 +1,21 @@
+post:
+  summary: Create an entity
+  parameters:
+    - name: labels
+      in: body
+      description: An object with lang as key, and the associated label as value
+      required: true
+      type: object
+      x-example: "{\n
+        \"en\": \"that entity's label in English\",\n
+        \"fr\": \"le label de cette entité en français\"\n
+      }"
+    - name: claims
+      in: body
+      description: An object with properties URIs as keys, and, as value, the associated array of claim values
+      required: true
+      type: object
+      x-example: "{ \"wdt:P31\": [ \"wd:Q571\" ] }"
+  tags:
+    - Entities
+  order: -10

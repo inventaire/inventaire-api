@@ -1,9 +1,11 @@
 get:
   summary: Last nearby items
-  description: Based on the logged in user position
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**<br>
+    Based on the logged in user position
   parameters:
-    - $ref: ./partials/limit.yaml
-    - $ref: ./partials/offset.yaml
+    - $ref: ../partials/limit.yaml
+    - $ref: ../partials/offset.yaml
   tags:
     - Items
 

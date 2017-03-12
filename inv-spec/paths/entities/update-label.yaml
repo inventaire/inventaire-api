@@ -1,0 +1,17 @@
+put:
+  summary: Update an entity's label
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+  parameters:
+    - $ref: ./partials/id.yaml
+    - $ref: ../partials/lang.yaml
+    - name: value
+      in: query
+      description: The updated label in the given language
+      required: true
+      type: string
+      x-example: Les Miséroïdes
+
+  tags:
+    - Entities
+  order: -6

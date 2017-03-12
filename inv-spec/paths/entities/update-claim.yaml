@@ -1,0 +1,24 @@
+put:
+  summary: Update an entity's label
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+  parameters:
+    - $ref: ./partials/id.yaml
+    - $ref: ../partials/lang.yaml
+    - $ref: ./partials/property.yaml
+    - name: old-value
+      in: query
+      description: The old value to be replaced. Can be omitted when intenting to create a new claim.
+      required: false
+      type: string
+      x-example: wd:Q571
+    - name: new-value
+      in: query
+      description: The new value to be replaced. Can be omitted when intenting to delete a claim.
+      required: false
+      type: string
+      x-example: wd:Q2831984
+
+  tags:
+    - Entities
+  order: -5

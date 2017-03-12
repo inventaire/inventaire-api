@@ -1,0 +1,6 @@
+name: id
+in: query
+description: An (internal) entity id
+required: true
+type: string
+x-example: d59e3e64f92c6340fbb10c5dcf437d86

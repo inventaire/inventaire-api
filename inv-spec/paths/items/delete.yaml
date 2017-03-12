@@ -1,4 +1,6 @@
-summary: Delete an item (requires to be authentified)
+summary: Delete an item
+description: |
+  **Requires to be [authentified](/#!Auth/post_auth_action_login)**<br>
 parameters:
   - name: id
     in: query
