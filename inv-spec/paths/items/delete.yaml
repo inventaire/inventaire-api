@@ -10,6 +10,7 @@ parameters:
     x-example: 278bbf4d704ee3c8d587fd73a885cca3
 tags:
   - Items
+order: 100
 
 responses:
   '200':

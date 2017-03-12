@@ -53,7 +53,12 @@
         jsonEditor: false,
         defaultModelRendering: 'schema',
         showRequestHeaders: false,
-        showOperationIds: false
+        showOperationIds: false,
+        operationsSorter: (a, b) => {
+          const aOrder = a.operation.order || 0
+          const bOrder = b.operation.order || 0
+          return aOrder - bOrder
+        }
       });
 
       window.swaggerUi.load();
