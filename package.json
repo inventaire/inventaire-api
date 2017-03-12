@@ -14,14 +14,15 @@
   "main": "dist/swagger-ui.js",
   "scripts": {
     "build": "./scripts/build",
+    "watch-build": "./scripts/watch_build",
+    "update-spec": "./scripts/update_spec",
+    "watch-spec": "./scripts/watch_spec",
     "handlebars": "handlebars ./src/main/template -f ./src/main/template/templates.js && gulp handlebars",
     "serve": "gulp serve",
     "prejshint": "gulp",
     "jshint": "jshint .",
     "pretest": "npm run jshint",
     "test": "mocha",
-    "update-spec": "./scripts/update_spec",
-    "watch-spec": "./scripts/watch_spec",
     "deploy": "rsync -ahz --delete --progress ./dist/* $USER@$HOST:~/swagger"
   },
   "repository": {

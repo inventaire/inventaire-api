@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+while true
+do
+  inotifywait -r src -e modify &&
+  npm run build &&
+  echo 'updated specs!'
+done
