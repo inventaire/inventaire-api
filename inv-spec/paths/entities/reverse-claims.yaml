@@ -1,0 +1,10 @@
+get:
+  summary: Get entities URIs by their claims
+  description: Pass a property and a value, get all the URIs of all the entities that match this claim
+  parameters:
+    - $ref: ./partials/property.yaml
+    - $ref: ./partials/uri.yaml
+    - $ref: ../partials/refresh.yaml
+
+  tags:
+    - Entities
