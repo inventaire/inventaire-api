@@ -11,7 +11,3 @@ parameters:
 tags:
   - Items
 order: 100
-
-responses:
-  '200':
-    $ref: ./partials/200.yaml

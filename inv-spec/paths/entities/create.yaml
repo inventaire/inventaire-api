@@ -18,4 +18,8 @@ post:
       x-example: "{ \"wdt:P31\": [ \"wd:Q571\" ] }"
   tags:
     - Entities
-  order: -10
+  order: -11
+
+responses:
+  '201':
+    $ref: ./partials/item-doc.yaml

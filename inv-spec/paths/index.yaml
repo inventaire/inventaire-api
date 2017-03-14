@@ -1,6 +1,8 @@
 /items:
+  post:
+    $ref: ./items/create.yaml
   put:
-    $ref: ./items/put.yaml
+    $ref: ./items/update.yaml
   delete:
     $ref: ./items/delete.yaml
 /items?action=by-ids:

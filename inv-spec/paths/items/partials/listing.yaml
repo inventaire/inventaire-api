@@ -1,0 +1,7 @@
+name: listing
+in: body
+description: 'The item visibility listing: one of private, network, or public. Defaults to private.'
+required: false
+type: string
+default: private
+x-example: network

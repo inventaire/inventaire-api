@@ -1,0 +1,14 @@
+id: 278bbf4d704ee3c8d587fd73a885cca3
+_rev: 5-3412ee94dba8ab756a26818d9b24c1db
+title: L'homme aux cercles bleus
+entity: isbn:9782290349229
+transaction: lending
+pictures: []
+owner: 6a65aa87e68e161650bf7741ad000af6
+created: 1486921727394
+snapshot:
+  entity:image: "/ipfs/Qma2fCfc8oUvre1XP89AiNYG9EEVye5kXFPVUBP5zyncFh"
+  entity:authors: Fred Vargas
+updated: 1488890952189
+details: 'Some details about the book, visible by anyone that can see the item'
+notes: 'Some notes about the book, will always be private'

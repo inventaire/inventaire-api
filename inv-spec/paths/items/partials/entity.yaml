@@ -1,0 +1,6 @@
+name: entity
+in: body
+description: The associated book entity (work or edition) uri
+required: true
+type: string
+x-example: isbn:9782253138938

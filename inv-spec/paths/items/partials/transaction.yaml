@@ -1,0 +1,7 @@
+name: transaction
+in: body
+description: 'The item transaction: one of giving, lending, selling, or inventorying. Defaults to inventorying.'
+required: false
+type: string
+default: inventorying
+x-example: lending

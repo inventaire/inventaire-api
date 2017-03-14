@@ -1,0 +1,6 @@
+name: details
+in: body
+description: 'Free text to be visible by anyone allowed to see the item'
+required: false
+type: string
+x-example: What a great book. Available for lending if you take care of it.

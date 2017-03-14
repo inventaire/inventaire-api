@@ -1,0 +1,6 @@
+name: notes
+in: body
+description: 'Free text that is visible only by the item owner'
+required: false
+type: string
+x-example: In the living room bookshelf

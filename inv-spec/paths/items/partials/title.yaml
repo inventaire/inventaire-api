@@ -1,0 +1,6 @@
+name: title
+in: body
+description: The item title
+required: true
+type: string
+x-example: the book title
