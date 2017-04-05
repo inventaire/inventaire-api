@@ -2,8 +2,8 @@ summary: Create an item
 description: |
   **Requires to be [authentified](/#!Auth/post_auth_action_login)**
 parameters:
-  - $ref: ./partials/title.yaml
   - $ref: ./partials/entity.yaml
+  - $ref: ../partials/optional_lang.yaml
   - $ref: ./partials/transaction.yaml
   - $ref: ./partials/listing.yaml
   - $ref: ./partials/details.yaml
