@@ -1,6 +1,6 @@
 <div class='heading'>
   <h2>
-    <a href='#!/{{{sanitize id}}}' class="toggleEndpointList" data-id="{{{sanitize id}}}">{{{sanitize name}}}</a> {{#summary}} : {{/summary}}{{{sanitize summary}}}
+    <a href='#!/{{{sanitize id}}}' class="toggleEndpointList" data-id="{{{sanitize id}}}">{{{sanitize name}}}</a>
   </h2>
   <ul class='options'>
     <li>
@@ -23,6 +23,7 @@
     {{/if}}
   </ul>
 </div>
+<p class="description markdown toggleEndpointList">{{{sanitize description}}}</p>
 <ul class='endpoints' id='{{{sanitize id}}}_endpoint_list' style='display:none'>
 
 </ul>
