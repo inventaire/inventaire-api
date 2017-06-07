@@ -1,0 +1,11 @@
+get:
+  summary: Users by usernames
+  parameters:
+    - name: usernames
+      in: query
+      description: Pipe-separated usernames
+      required: false
+      type: string
+      x-example: 278bbf4d704ee3c8d587fd73a885cca3
+  tags:
+    - Users

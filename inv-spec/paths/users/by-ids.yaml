@@ -1,0 +1,11 @@
+get:
+  summary: Users by ids
+  parameters:
+    - name: ids
+      in: query
+      description: Pipe-separated users ids
+      required: false
+      type: string
+      x-example: 278bbf4d704ee3c8d587fd73a885cca3
+  tags:
+    - Users

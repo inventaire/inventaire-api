@@ -47,3 +47,8 @@
 
 # /entities?action=revert-merge:
 #   $ref: ./entities/revert-merge.yaml
+
+/users?action=by-ids:
+  $ref: ./users/by-ids.yaml
+/users?action=by-usernames:
+  $ref: ./users/by-usernames.yaml
