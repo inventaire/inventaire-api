@@ -30,3 +30,25 @@ paths:
   $ref: ./paths/index.yaml
 definitions:
   $ref: ./definitions/index.yaml
+tags:
+  -
+    name: Auth
+    description: Login and stuffs
+  -
+    name: User
+    description: Read and edit authentified user data
+  -
+    name: Items
+    description: What users' inventories are made of
+  -
+    name: Entities
+    description: Think books, authors, series data (see [entities map](https://inventaire.github.io/entities-map/))
+  -
+    name: Users
+    description: Get/find other users data
+  -
+    name: Groups
+    description: Read and edit users groups data
+  -
+    name: Transactions
+    description: When users request each others items
