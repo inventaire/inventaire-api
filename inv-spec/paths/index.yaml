@@ -2,8 +2,10 @@
   $ref: ./auth/login.yaml
 
 /user:
-  get: ./user/get.yaml
-  put: ./user/put.yaml
+  get:
+    $ref: ./user/get.yaml
+  put:
+    $ref: ./user/put.yaml
 
 /users?action=by-ids:
   $ref: ./users/by-ids.yaml
