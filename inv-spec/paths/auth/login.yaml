@@ -1,0 +1,27 @@
+post:
+  summary: Login to a user account
+  description: |
+    The following intructions assume that you already [created a user account](https://inventaire.io/signup), and thus already have a username and password.
+
+    There are currently two ways to make authenfied requests:
+      * using [BasicAuth](https://en.wikipedia.org/wiki/Basic_access_authentication), passing your username and password with each requests [**slow**]
+      * getting session cookies and passing them with each requests [**fast**]
+
+    The login endpoint is about getting those session cookies, namely `express:sess` and `express:sess.sig`.
+
+    In the future, inventaire.io could also allow to authentify requests using OAuth, please upvote and/or comment [this issue](https://github.com/inventaire/inventaire/issues/84) if you're interested
+  parameters:
+    - name: username
+      in: body
+      description: a user username
+      required: true
+      type: string
+      x-example: myusername
+    - name: password
+      in: body
+      description: a user password
+      required: true
+      type: string
+      x-example: mypassword
+  tags:
+    - Auth

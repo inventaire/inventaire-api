@@ -1,3 +1,6 @@
+/auth?action=login:
+  $ref: ./auth/login.yaml
+
 /items:
   post:
     $ref: ./items/create.yaml
