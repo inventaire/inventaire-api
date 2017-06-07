@@ -1,0 +1,23 @@
+summary: Update the authentified user
+parameters:
+  - name: attribute
+    in: body
+    description: |
+      The attribute to update:
+        * username
+        * email
+        * language
+        * bio
+        * settings
+        * position
+    required: true
+    type: string
+    x-example: 278bbf4d704ee3c8d587fd73a885cca3
+  - name: value
+    in: body
+    description: The new value to give to this attribute
+    required: true
+    # type: string
+    x-example: 278bbf4d704ee3c8d587fd73a885cca3
+tags:
+  - User
