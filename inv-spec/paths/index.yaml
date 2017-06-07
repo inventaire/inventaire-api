@@ -1,6 +1,13 @@
 /auth?action=login:
   $ref: ./auth/login.yaml
 
+/users?action=by-ids:
+  $ref: ./users/by-ids.yaml
+/users?action=by-usernames:
+  $ref: ./users/by-usernames.yaml
+/users?action=search:
+  $ref: ./users/search.yaml
+
 /items:
   post:
     $ref: ./items/create.yaml
@@ -51,7 +58,3 @@
 # /entities?action=revert-merge:
 #   $ref: ./entities/revert-merge.yaml
 
-/users?action=by-ids:
-  $ref: ./users/by-ids.yaml
-/users?action=by-usernames:
-  $ref: ./users/by-usernames.yaml
