@@ -1,0 +1,11 @@
+get:
+  summary: Get a group by its slug
+  parameters:
+    - name: slug
+      in: query
+      description: a group slug
+      required: true
+      type: string
+      x-example: la-myne
+  tags:
+    - Groups

@@ -1,0 +1,11 @@
+get:
+  summary: Groups by usernames
+  parameters:
+    - name: search
+      in: query
+      description: Text matching groups name or description.
+      required: true
+      type: string
+      x-example: nantes
+  tags:
+    - Groups

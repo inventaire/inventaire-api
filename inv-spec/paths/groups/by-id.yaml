@@ -1,0 +1,11 @@
+get:
+  summary: Get a group by its id
+  parameters:
+    - name: ids
+      in: query
+      description: a group id
+      required: true
+      type: string
+      x-example: 85d797f862e362335f3e6144cc12568a
+  tags:
+    - Groups

@@ -64,3 +64,9 @@
 # /entities?action=revert-merge:
 #   $ref: ./entities/revert-merge.yaml
 
+/groups?action=by-id:
+  $ref: ./groups/by-id.yaml
+/groups?action=by-slug:
+  $ref: ./groups/by-slug.yaml
+/groups?action=search:
+  $ref: ./groups/search.yaml
