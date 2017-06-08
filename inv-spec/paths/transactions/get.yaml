@@ -1,0 +1,4 @@
+get:
+  summary: Get the authentified user transactions data
+  tags:
+    - Transactions

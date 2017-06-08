@@ -70,3 +70,8 @@
   $ref: ./groups/by-slug.yaml
 /groups?action=search:
   $ref: ./groups/search.yaml
+
+/transactions:
+  $ref: ./transactions/get.yaml
+/transactions?action=get-messages:
+  $ref: ./transactions/get-messages.yaml

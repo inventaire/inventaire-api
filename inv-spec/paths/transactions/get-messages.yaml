@@ -1,0 +1,11 @@
+get:
+  summary: Get messages associated to a transaction
+  parameters:
+    - name: transaction
+      in: query
+      description: a transaction id
+      required: true
+      type: string
+      x-example: 85d797f862e362335f3e6144cc12568a
+  tags:
+    - Transactions
