@@ -140,8 +140,8 @@ window.Docs = {
 
 		$('li#resource_' + resource).addClass('active');
 
-		var elem = $('li#resource_' + resource + ' ul.endpoints');
-		elem.slideDown();
+    $('li#resource_' + resource + ' ul.endpoints').slideDown();
+    $('li#resource_' + resource + ' div.description').slideDown();
 	},
 
 	// Collapse resource and mark as explicitly closed
@@ -154,8 +154,8 @@ window.Docs = {
 
 		$('li#resource_' + resource).removeClass('active');
 
-		var elem = $('li#resource_' + resource + ' ul.endpoints');
-		elem.slideUp();
+    $('li#resource_' + resource + ' ul.endpoints').slideUp();
+    $('li#resource_' + resource + ' div.description').slideUp();
 	},
 
 	expandOperationsForResource: function(resource) {
