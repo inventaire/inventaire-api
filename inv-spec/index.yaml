@@ -33,22 +33,22 @@ definitions:
 tags:
   -
     name: Auth
-    description: Login and stuffs
+    description: Login and stuffs ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/auth/auth.coffee))
   -
     name: User
-    description: Read and edit authentified user data
+    description: Read and edit authentified user data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/user/user.coffee))
   -
     name: Items
-    description: What users' inventories are made of
+    description: What users' inventories are made of ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/items/items.coffee))
   -
     name: Entities
-    description: Think books, authors, series data (see [entities map](https://inventaire.github.io/entities-map/))
+    description: Think books, authors, series data (see [entities map](https://inventaire.github.io/entities-map/)) ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/entities/entities.coffee))
   -
     name: Users
-    description: Get/find other users data
+    description: Get/find other users data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/users/users.coffee))
   -
     name: Groups
-    description: Read and edit users groups data
+    description: Read and edit users groups data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/groups/groups.coffee))
   -
     name: Transactions
-    description: When users request each others items
+    description: When users request each others items ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/transactions/transactions.coffee))
