@@ -4,7 +4,6 @@ put:
     **Requires to be [authentified](/#!Auth/post_auth_action_login)**
   parameters:
     - $ref: ./partials/id.yaml
-    - $ref: ../partials/lang.yaml
     - $ref: ./partials/property.yaml
     - name: old-value
       in: query
