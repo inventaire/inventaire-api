@@ -3,4 +3,4 @@ in: query
 description: The claim's property URI.
 required: true
 type: string
-x-example: wdt:P31
+x-example: wdt:P50
