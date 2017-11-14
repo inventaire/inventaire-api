@@ -1,0 +1,22 @@
+put:
+  summary: Update the group settings
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login) and admin of the group**
+  parameters:
+    - $ref: ../partials/group.yaml
+    - name: attribute
+      in: body
+      description: |
+        the setting to update: name (String), picture (Url), description (String), searchable (Boolean), position (Array of two Floats representing the latitude and longitude)
+      required: true
+      type: string
+      x-example: name
+    - name: value
+      in: body
+      description: the new setting value
+      required: true
+      type: string
+      x-example: name
+  tags:
+    - Groups
+

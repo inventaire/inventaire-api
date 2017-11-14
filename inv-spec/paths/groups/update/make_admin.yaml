@@ -1,0 +1,9 @@
+put:
+  summary: Give admin right to a non-admin member
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login) and admin of the group**
+  parameters:
+    - $ref: ../partials/group.yaml
+    - $ref: ../partials/user.yaml
+  tags:
+    - Groups

@@ -1,0 +1,6 @@
+name: name
+in: body
+description: The group description
+required: false
+type: string
+x-example: Join us to share your favorite Proust books!

@@ -64,12 +64,38 @@
 # /entities?action=revert-merge:
 #   $ref: ./entities/revert-merge.yaml
 
+/groups:
+  $ref: ./groups/default.yaml
 /groups?action=by-id:
   $ref: ./groups/by-id.yaml
 /groups?action=by-slug:
   $ref: ./groups/by-slug.yaml
 /groups?action=search:
   $ref: ./groups/search.yaml
+/groups?action=create:
+  $ref: ./groups/create.yaml
+/groups?action=invite:
+  $ref: ./groups/update/invite.yaml
+/groups?action=accept:
+  $ref: ./groups/update/accept.yaml
+/groups?action=decline:
+  $ref: ./groups/update/decline.yaml
+/groups?action=request:
+  $ref: ./groups/update/request.yaml
+/groups?action=cancel-request:
+  $ref: ./groups/update/cancel_request.yaml
+/groups?action=accept-request:
+  $ref: ./groups/update/accept_request.yaml
+/groups?action=refuse-request:
+  $ref: ./groups/update/refuse_request.yaml
+/groups?action=make-admin:
+  $ref: ./groups/update/make_admin.yaml
+/groups?action=kick:
+  $ref: ./groups/update/kick.yaml
+/groups?action=leave:
+  $ref: ./groups/update/leave.yaml
+/groups?action=update-settings:
+  $ref: ./groups/update/update_settings.yaml
 
 /transactions:
   $ref: ./transactions/get.yaml

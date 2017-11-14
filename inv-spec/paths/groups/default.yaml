@@ -1,0 +1,6 @@
+get:
+  summary: Get all the groups the authentified user is a member of
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+  tags:
+    - Groups

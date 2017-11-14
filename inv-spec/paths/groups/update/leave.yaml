@@ -1,0 +1,8 @@
+put:
+  summary: Leave a group
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login) and member of the group and not the last group admin**
+  parameters:
+    - $ref: ../partials/user.yaml
+  tags:
+    - Groups

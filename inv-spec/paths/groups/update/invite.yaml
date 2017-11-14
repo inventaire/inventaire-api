@@ -1,0 +1,15 @@
+put:
+  summary: Invite a user to join the group
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login) and member of the group**
+  parameters:
+    - $ref: ../partials/group.yaml
+    - name: user
+      in: body
+      description: The user id from the invited user
+      required: true
+      type: string
+      x-example: 85d797f862e362335f3e6144cc12568a
+
+  tags:
+    - Groups

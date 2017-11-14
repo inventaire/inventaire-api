@@ -1,0 +1,6 @@
+name: position
+in: body
+description: The group geographic coordinates (latitude, longitude)
+required: false
+type: array
+x-example: [ 45.7836489279611, -14.8843348026275635 ]

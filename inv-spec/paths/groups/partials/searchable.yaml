@@ -1,0 +1,6 @@
+name: searchable
+in: body
+description: Should the group appear in public search results
+required: true
+type: boolean
+x-example: true

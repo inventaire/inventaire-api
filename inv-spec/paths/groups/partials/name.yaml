@@ -1,0 +1,6 @@
+name: name
+in: body
+description: The group name
+required: true
+type: string
+x-example: the secret club of Proustian experts

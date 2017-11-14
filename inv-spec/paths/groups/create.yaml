@@ -1,0 +1,11 @@
+post:
+  summary: Create a group
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+  parameters:
+    - $ref: ./partials/name.yaml
+    - $ref: ./partials/searchable.yaml
+    - $ref: ./partials/description.yaml
+    - $ref: ./partials/position.yaml
+  tags:
+    - Groups

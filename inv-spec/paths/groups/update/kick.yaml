@@ -1,0 +1,9 @@
+put:
+  summary: Remove a user from the group
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login) and admin of the group**, while the removed user shouldn't be an admin
+  parameters:
+    - $ref: ../partials/group.yaml
+    - $ref: ../partials/user.yaml
+  tags:
+    - Groups

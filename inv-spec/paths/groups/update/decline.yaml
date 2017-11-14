@@ -1,0 +1,8 @@
+put:
+  summary: Decline an invitation to join a group
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login) and member of the group**
+  parameters:
+    - $ref: ../partials/group.yaml
+  tags:
+    - Groups

@@ -1,0 +1,8 @@
+put:
+  summary: Accept an invitation to join a group
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+  parameters:
+    - $ref: ../partials/group.yaml
+  tags:
+    - Groups
