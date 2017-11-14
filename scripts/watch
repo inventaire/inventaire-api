@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+npm run build && npm run watch-build &
+npm run update-spec && npm run watch-spec &
+npm run start
