@@ -103,3 +103,10 @@
   $ref: ./transactions/get.yaml
 /transactions?action=get-messages:
   $ref: ./transactions/get-messages.yaml
+
+/tasks?action=by-ids:
+  $ref: ./tasks/by-ids.yaml
+/tasks?action=by-suspect-uri:
+  $ref: ./tasks/by-suspect-uri.yaml
+/tasks?action=by-score:
+  $ref: ./tasks/by-score.yaml

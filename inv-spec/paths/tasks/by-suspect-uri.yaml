@@ -1,0 +1,12 @@
+get:
+  summary: Get all tasks with the same suspect uri
+  description: Get an array of tasks which have the same suspect
+  parameters:
+    - name: uri
+      in: query
+      description: An entity URI.
+      required: true
+      type: string
+      x-example: inv:026a1856df319a2fe3c14c4db605ea2f
+  tags:
+    - Tasks

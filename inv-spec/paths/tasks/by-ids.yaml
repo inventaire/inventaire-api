@@ -1,0 +1,12 @@
+get:
+  summary: Get tasks by their ids
+  description: Get an array of tasks
+  parameters:
+    - name: ids
+      in: query
+      description: Several task ids
+      required: true
+      type: string
+      x-example: 0ce27bfc49164fce0781b37656037ba5
+  tags:
+    - Tasks

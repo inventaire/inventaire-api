@@ -1,0 +1,7 @@
+get:
+  summary: Get tasks by their highest score
+  description: Get an array of tasks
+  parameters:
+    - $ref: ../partials/limit.yaml
+  tags:
+    - Tasks

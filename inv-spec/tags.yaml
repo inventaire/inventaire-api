@@ -19,3 +19,7 @@
 -
   name: Transactions
   description: When users request each others items ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/transactions/transactions.coffee))
+
+-
+  name: Tasks
+  description: Todo actions, mainly used to deduplicates inventaire entities to be merged with wikidata items. A task must have a unique suspectUri AND a unique suggestionUri
