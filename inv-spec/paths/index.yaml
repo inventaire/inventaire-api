@@ -40,6 +40,8 @@
   $ref: ./entities/changes.yaml
 /entities?action=reverse-claims:
   $ref: ./entities/reverse-claims.yaml
+/entities?action=popularity:
+  $ref: ./entities/popularity.yaml
 # /entities?action=author-works:
 #   $ref: ./entities/author-works.yaml
 # /entities?action=serie-parts:
