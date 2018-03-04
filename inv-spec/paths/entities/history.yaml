@@ -1,0 +1,6 @@
+get:
+  summary: Get entities history as snapshots and diffs
+  parameters:
+    - $ref: ./partials/id.yaml
+  tags:
+    - Entities
