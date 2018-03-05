@@ -1,0 +1,7 @@
+get:
+  summary: Get author works from uri
+  description: Pass an author Uri, get uris of all `works`, `series` and `articles` of the entity that match this claim
+  parameters:
+    - $ref: ./partials/uri.yaml
+  tags:
+    - Entities

@@ -44,8 +44,8 @@
   $ref: ./entities/popularity.yaml
 /entities?action=history:
   $ref: ./entities/history.yaml
-# /entities?action=author-works:
-#   $ref: ./entities/author-works.yaml
+/entities?action=author-works:
+  $ref: ./entities/author-works.yaml
 # /entities?action=serie-parts:
 #   $ref: ./entities/serie-parts.yaml
 
