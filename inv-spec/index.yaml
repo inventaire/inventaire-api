@@ -2,10 +2,10 @@ swagger: '2.0'
 info:
   $ref: ./info.yaml
 # the domain of the service
-host: localhost:3006
+host: inventaire.ios
 # array of all schemes that your API supports
 schemes:
-  - http
+  - https
 # will be prefixed to all paths
 basePath: /api
 consumes:
