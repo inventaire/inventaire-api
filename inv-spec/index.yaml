@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   $ref: ./info.yaml
 # the domain of the service
-host: inventaire.ios
+host: inventaire.io
 # array of all schemes that your API supports
 schemes:
   - https
