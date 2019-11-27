@@ -32,8 +32,6 @@
 /items?action=nearby:
   $ref: ./items/nearby.yaml
 
-/entities?action=search:
-  $ref: ./entities/search.yaml
 /entities?action=by-uris:
   $ref: ./entities/by-uris.yaml
 /entities?action=changes:
