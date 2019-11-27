@@ -24,7 +24,7 @@
     "jshint": "jshint .",
     "pretest": "npm run jshint",
     "test": "mocha",
-    "deploy": "rsync -ahz --delete --progress ./dist/* $USER@$HOST:~/swagger"
+    "deploy": "rsync -ahz --delete --progress ./dist/* invbackyard:~/inventaire-api"
   },
   "repository": {
     "type": "git",
