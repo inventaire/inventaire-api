@@ -52,7 +52,7 @@
     "gulp-uglify": "^1.1.0",
     "gulp-watch": "^4.1.1",
     "gulp-wrap": "^0.14.0",
-    "handlebars": "^4.5.3",
+    "handlebars": "^4.7.1",
     "jshint-stylish": "^1.0.1",
     "less": "^2.4.0",
     "mocha": "^2.1.0",
@@ -72,6 +72,6 @@
     "live-server": "^1.2.1",
     "phantomjs": "^1.9.20",
     "selenium-webdriver": "^2.45.0",
-    "sinon-chai": "2.8.0",
+    "sinon-chai": "2.8.0"
   }
 }

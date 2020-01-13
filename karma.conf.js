@@ -15,7 +15,7 @@ module.exports = function(config) {
       'dist/lib/jquery.slideto.min.js',
       'dist/lib/jquery.wiggle.min.js',
       'dist/lib/jquery.ba-bbq.min.js',
-      'dist/lib/handlebars-2.0.0.js',
+      'dist/lib/handlebars-4.7.1.js',
       'dist/lib/js-yaml.min.js',
       'dist/lib/lodash.min.js',
       'dist/lib/backbone-min.js',
