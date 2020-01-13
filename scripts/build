@@ -1,4 +1,13 @@
 #!/usr/bin/env zsh
+
+NODE_VERSION=$(node -v)
+
+[[ "${NODE_VERSION:0:2}" == "v8" ]] || {
+  # gulp crashes with higher versions https://github.com/gulpjs/gulp/issues/2162
+  echo "building requires Node v8.x.x"
+  exit 1
+}
+
 ROOT=$(pwd)
 
 npm run handlebars && gulp && npm run update-spec
