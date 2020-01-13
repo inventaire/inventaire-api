@@ -2,7 +2,7 @@ title: Inventaire API
 description: |
   **[inventaire.io](https://inventaire.io) HTTP API documentation**
 
-  **Documentation status**: work in progress
+  **Documentation status**: incomplete / partially out-dated (we need to find a better setup to keep it in sync with [The Truth](https://github.com/inventaire/inventaire/blob/master/server/controllers/routes.js))
 
   **API stability**: variably stable.
 
