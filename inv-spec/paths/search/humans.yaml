@@ -1,0 +1,36 @@
+get:
+  summary: Search for people
+  description: Search for people containing `search` in their name
+  parameters:
+    - name: types
+      in: query
+      description: the type of search.
+      required: true
+      schema:
+        type: string
+        enum:
+          - humans
+    - name: search
+      in: query
+      description: the string to be searched
+      required: true
+      type: string
+      x-example: rowling
+    - name: limit
+      in: query
+      description: number of works to be returned
+      required: false
+      x-example: 20
+      schema:
+        type: integer
+        default: 10
+        minimum: 1
+        maximum: 100
+    - name: lang
+      in: query
+      description: language of the results returned
+      required: false
+      type: string
+      x-example: en
+  tags:
+    - Search
