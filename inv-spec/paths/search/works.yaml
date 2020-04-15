@@ -4,7 +4,7 @@ get:
   parameters:
     - name: types
       in: query
-      description: A serie URI.
+      description: Type of entities being searched.
       required: true
       schema:
         type: string
