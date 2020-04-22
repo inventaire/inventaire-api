@@ -1,103 +1,103 @@
-/api/auth?action=login:
+/auth?action=login:
   $ref: ./auth/login.yaml
 
-/api/user:
+/user:
   get:
     $ref: ./user/get.yaml
   put:
     $ref: ./user/put.yaml
 
-/api/users?action=by-ids:
+/users?action=by-ids:
   $ref: ./users/by-ids.yaml
-/api/users?action=by-usernames:
+/users?action=by-usernames:
   $ref: ./users/by-usernames.yaml
-/api/users?action=search:
+/users?action=search:
   $ref: ./users/search.yaml
 
-/api/items:
+/items:
   post:
     $ref: ./items/create.yaml
   put:
     $ref: ./items/update.yaml
   delete:
     $ref: ./items/delete.yaml
-/api/items?action=by-ids:
+/items?action=by-ids:
   $ref: ./items/by-ids.yaml
-/api/items?action=by-users:
+/items?action=by-users:
   $ref: ./items/by-users.yaml
-/api/items?action=by-entities:
+/items?action=by-entities:
   $ref: ./items/by-entities.yaml
-/api/items?action=last-public:
+/items?action=last-public:
   $ref: ./items/last-public.yaml
-/api/items?action=nearby:
+/items?action=nearby:
   $ref: ./items/nearby.yaml
 
-/api/entities?action=by-uris:
+/entities?action=by-uris:
   $ref: ./entities/by-uris.yaml
-/api/entities?action=changes:
+/entities?action=changes:
   $ref: ./entities/changes.yaml
-/api/entities?action=reverse-claims:
+/entities?action=reverse-claims:
   $ref: ./entities/reverse-claims.yaml
-/api/entities?action=popularity:
+/entities?action=popularity:
   $ref: ./entities/popularity.yaml
-/api/entities?action=history:
+/entities?action=history:
   $ref: ./entities/history.yaml
-/api/entities?action=author-works:
+/entities?action=author-works:
   $ref: ./entities/author-works.yaml
-# /api/entities?action=serie-parts:
+# /entities?action=serie-parts:
 #   $ref: ./entities/serie-parts.yaml
 
-/api/entities?action=create:
+/entities?action=create:
   $ref: ./entities/create.yaml
-# /api/entities?action=exists-or-create-from-seed:
+# /entities?action=exists-or-create-from-seed:
   # $ref: ./entities/exists-or-create-from-seed.yaml
 
-/api/entities?action=update-label:
+/entities?action=update-label:
   $ref: ./entities/update-label.yaml
 
-/api/entities?action=update-claim:
+/entities?action=update-claim:
   $ref: ./entities/update-claim.yaml
 
-# /api/entities?action=merge:
+# /entities?action=merge:
 #   $ref: ./entities/merge.yaml
 
-# /api/entities?action=revert-merge:
+# /entities?action=revert-merge:
 #   $ref: ./entities/revert-merge.yaml
 
-/api/groups:
+/groups:
   $ref: ./groups/default.yaml
-/api/groups?action=by-id:
+/groups?action=by-id:
   $ref: ./groups/by-id.yaml
-/api/groups?action=by-slug:
+/groups?action=by-slug:
   $ref: ./groups/by-slug.yaml
-/api/groups?action=search:
+/groups?action=search:
   $ref: ./groups/search.yaml
-/api/groups?action=create:
+/groups?action=create:
   $ref: ./groups/create.yaml
-/api/groups?action=invite:
+/groups?action=invite:
   $ref: ./groups/update/invite.yaml
-/api/groups?action=accept:
+/groups?action=accept:
   $ref: ./groups/update/accept.yaml
-/api/groups?action=decline:
+/groups?action=decline:
   $ref: ./groups/update/decline.yaml
-/api/groups?action=request:
+/groups?action=request:
   $ref: ./groups/update/request.yaml
-/api/groups?action=cancel-request:
+/groups?action=cancel-request:
   $ref: ./groups/update/cancel_request.yaml
-/api/groups?action=accept-request:
+/groups?action=accept-request:
   $ref: ./groups/update/accept_request.yaml
-/api/groups?action=refuse-request:
+/groups?action=refuse-request:
   $ref: ./groups/update/refuse_request.yaml
-/api/groups?action=make-admin:
+/groups?action=make-admin:
   $ref: ./groups/update/make_admin.yaml
-/api/groups?action=kick:
+/groups?action=kick:
   $ref: ./groups/update/kick.yaml
-/api/groups?action=leave:
+/groups?action=leave:
   $ref: ./groups/update/leave.yaml
-/api/groups?action=update-settings:
+/groups?action=update-settings:
   $ref: ./groups/update/update_settings.yaml
 
-/api/transactions:
+/transactions:
   $ref: ./transactions/get.yaml
-/api/transactions?action=get-messages:
+/transactions?action=get-messages:
   $ref: ./transactions/get-messages.yaml
