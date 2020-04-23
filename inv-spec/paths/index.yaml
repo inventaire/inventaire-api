@@ -44,8 +44,8 @@
   $ref: ./entities/history.yaml
 /entities?action=author-works:
   $ref: ./entities/author-works.yaml
-# /entities?action=serie-parts:
-#   $ref: ./entities/serie-parts.yaml
+/entities?action=serie-parts:
+  $ref: ./entities/serie-parts.yaml
 
 /entities?action=create:
   $ref: ./entities/create.yaml
@@ -101,3 +101,10 @@
   $ref: ./transactions/get.yaml
 /transactions?action=get-messages:
   $ref: ./transactions/get-messages.yaml
+
+/search?types=humans:
+  $ref: ./search/humans.yaml
+/search?types=series:
+  $ref: ./search/series.yaml
+/search?types=works:
+  $ref: ./search/works.yaml
