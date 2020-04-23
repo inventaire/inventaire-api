@@ -10,6 +10,7 @@ get:
         type: string
         enum:
           - works
+      x-example: works
     - name: search
       in: query
       description: the string to be searched
