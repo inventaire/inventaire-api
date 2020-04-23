@@ -1,0 +1,12 @@
+get:
+  summary: Get works of a serie
+  description: Pass a serie Uri and get uris of all `works` that associated to it
+  parameters:
+    - name: uri
+      in: query
+      description: A serie URI.
+      required: true
+      type: string
+      x-example: wd:Q718449
+  tags:
+    - Entities
