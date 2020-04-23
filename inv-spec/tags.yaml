@@ -1,24 +1,24 @@
 -
   name: Auth
-  description: Login and stuffs ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/auth/auth.coffee))
+  description: Login and stuffs ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/auth/auth.js))
 -
   name: User
-  description: Read and edit authentified user data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/user/user.coffee))
+  description: Read and edit authentified user data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/user/user.js))
 -
   name: Items
-  description: What users' inventories are made of ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/items/items.coffee))
+  description: What users' inventories are made of ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/items/items.js))
 -
   name: Entities
-  description: Think books, authors, series data (see [entities map](https://inventaire.github.io/entities-map/)) ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/entities/entities.coffee))
+  description: Think books, authors, series data (see [entities map](https://inventaire.github.io/entities-map/)) ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/entities/entities.js))
 -
   name: Users
-  description: Get/find other users data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/users/users.coffee))
+  description: Get/find other users data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/users/users.js))
 -
   name: Groups
-  description: Read and edit users groups data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/groups/groups.coffee))
+  description: Read and edit users groups data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/groups/groups.js))
 -
   name: Transactions
-  description: When users request each others items ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/transactions/transactions.coffee))
+  description: When users request each others items ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/transactions/transactions.js))
 -
   name: Search
   description: Permits to search for people, works, series, users, groups in the database ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/search/search.js))
