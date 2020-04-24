@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 while true
 do
   inotifywait -r inv-spec -e modify &&
