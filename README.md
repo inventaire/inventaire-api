@@ -32,6 +32,5 @@ If you don't want to install NodeJS on your machine, you can use it in a Docker 
 4. Access the documentation through your browser at http://localhost:8080.
 
 - To update the UI: `docker run -it --rm -v $(pwd):/data -w /data node:8 npm run build`
-- To update the API specs alone: `docker run -it --rm -v $(pwd):/data -w /data node npm run update-spec`
-- To delete the installed dependencies: `rm -rf ./node_modules`
+- To update the API specs alone: `docker run -it --rm -v $(pwd):/data -w /data node:8 npm run update-spec`
 - To delete the generated documentation: `rm -rf ./dist`
