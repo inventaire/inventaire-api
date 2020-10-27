@@ -54,15 +54,12 @@
 
 /entities?action=update-label:
   $ref: ./entities/update-label.yaml
-
 /entities?action=update-claim:
   $ref: ./entities/update-claim.yaml
-
 # /entities?action=merge:
 #   $ref: ./entities/merge.yaml
-
-# /entities?action=revert-merge:
-#   $ref: ./entities/revert-merge.yaml
+/entities?action=revert-merge:
+  $ref: ./entities/revert-merge.yaml
 
 /groups:
   $ref: ./groups/default.yaml

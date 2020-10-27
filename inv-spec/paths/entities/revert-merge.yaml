@@ -1,0 +1,14 @@
+put:
+  summary: Revert an entities' merge
+  description: |
+    **Requires to have dataadmin rights**
+  parameters:
+    - name: from
+      in: query
+      description: The inventaire entity who received the other merge entity.
+      type: string
+      x-example: inv:d59e3e64f92c6340fbb10c5dcf437d86
+      required: true
+  tags:
+    - Entities
+  order: -5
