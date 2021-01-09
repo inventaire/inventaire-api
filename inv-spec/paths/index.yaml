@@ -105,3 +105,8 @@
   $ref: ./search/series.yaml
 /search?types=works:
   $ref: ./search/works.yaml
+
+/shelves?action=by-ids:
+  $ref: ./shelves/by-ids.yaml
+/shelves?action=by-owners:
+  $ref: ./shelves/by-owners.yaml

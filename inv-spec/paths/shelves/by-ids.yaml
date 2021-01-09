@@ -1,0 +1,11 @@
+get:
+  summary: Shelves by ids
+  parameters:
+    - name: ids
+      in: query
+      description: Pipe-separated shelves ids
+      required: false
+      type: string
+      x-example: e94ed47d24e967b3a7e41e7e95a265d4
+  tags:
+    - Shelves

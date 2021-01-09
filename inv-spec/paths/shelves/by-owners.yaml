@@ -1,0 +1,11 @@
+get:
+  summary: Shelves by owners
+  parameters:
+    - name: owners
+      in: query
+      description: Pipe-separated shelves owners ids (users)
+      required: false
+      type: string
+      x-example: 6a65aa87e68e161650bf7741ad001249
+  tags:
+    - Shelves

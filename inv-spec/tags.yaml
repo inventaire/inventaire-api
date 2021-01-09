@@ -22,3 +22,6 @@
 -
   name: Search
   description: Permits to search for people, works, series, users, groups in the database ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/search/search.js))
+-
+  name: Shelves
+  description: List of items. Items must belong to the shelf' owner. An owner can add or remove items from their own shelf. An owner must be a user
