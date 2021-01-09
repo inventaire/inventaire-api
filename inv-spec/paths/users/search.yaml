@@ -6,6 +6,6 @@ get:
       description: Text matching users username or bio.
       required: true
       type: string
-      x-example: max
+      x-example: Georges
   tags:
     - Users

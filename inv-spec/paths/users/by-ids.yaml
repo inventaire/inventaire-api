@@ -6,6 +6,6 @@ get:
       description: Pipe-separated users ids
       required: false
       type: string
-      x-example: 278bbf4d704ee3c8d587fd73a885cca3
+      x-example: 6a65aa87e68e161650bf7741ad001249
   tags:
     - Users
