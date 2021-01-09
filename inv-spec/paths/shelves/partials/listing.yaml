@@ -1,0 +1,6 @@
+name: listing
+in: body
+description: 'The shelf visibility listing: one of private, network, or public.'
+required: true
+type: string
+x-example: private

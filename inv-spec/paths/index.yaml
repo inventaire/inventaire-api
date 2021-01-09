@@ -110,3 +110,13 @@
   $ref: ./shelves/by-ids.yaml
 /shelves?action=by-owners:
   $ref: ./shelves/by-owners.yaml
+/shelves?action=create:
+  $ref: ./shelves/create.yaml
+/shelves?action=update:
+  $ref: ./shelves/update.yaml
+/shelves?action=delete:
+  $ref: ./shelves/delete.yaml
+/shelves?action=add-items:
+  $ref: ./shelves/add-items.yaml
+/shelves?action=remove-items:
+  $ref: ./shelves/remove-items.yaml

@@ -1,0 +1,6 @@
+name: name
+in: body
+description: The shelf name
+required: true
+type: string
+x-example: Our philosophy books

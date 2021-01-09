@@ -1,0 +1,15 @@
+post:
+  summary: Remove items from a shelf
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+  parameters:
+    - name: id
+      in: body
+      description: An existing shelf id
+      required: true
+      type: string
+      x-example: e94ed47d24e967b3a7e41e7e95a265d4
+    - $ref: ./partials/items.yaml
+
+  tags:
+    - Shelves

@@ -1,0 +1,10 @@
+post:
+  summary: Create a shelf
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+  parameters:
+    - $ref: ./partials/name.yaml
+    - $ref: ./partials/listing.yaml
+    - $ref: ./partials/description.yaml
+  tags:
+    - Shelves

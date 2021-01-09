@@ -1,0 +1,6 @@
+name: items
+in: body
+description: An array of existing items id or a signle item id.
+required: true
+type: string
+x-example: [ 278bbf4d704ee3c8d587fd73a885cca3 ]

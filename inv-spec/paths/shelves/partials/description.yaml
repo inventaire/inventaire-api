@@ -1,0 +1,6 @@
+name: description
+in: body
+description: The shelf description
+required: false
+type: string
+x-example: A selection of books of an inventory
