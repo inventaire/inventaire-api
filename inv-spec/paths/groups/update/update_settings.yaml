@@ -13,7 +13,7 @@ put:
       x-example: name
     - name: value
       in: body
-      description: the new setting value
+      description: The new setting value
       required: true
       type: string
       x-example: name

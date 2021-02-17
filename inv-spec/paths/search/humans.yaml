@@ -4,7 +4,7 @@ get:
   parameters:
     - name: types
       in: query
-      description: the type of search.
+      description: Type of search.
       required: true
       schema:
         type: string
@@ -13,13 +13,13 @@ get:
       x-example: humans
     - name: search
       in: query
-      description: the string to be searched
+      description: The string to be searched
       required: true
       type: string
       x-example: rowling
     - name: limit
       in: query
-      description: number of works to be returned
+      description: Maximum number of works returned
       required: false
       x-example: 20
       schema:

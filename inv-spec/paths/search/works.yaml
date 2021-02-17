@@ -13,7 +13,7 @@ get:
       x-example: works
     - name: search
       in: query
-      description: the string to be searched
+      description: String to be searched
       required: true
       type: string
       x-example: team medical

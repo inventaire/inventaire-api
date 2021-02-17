@@ -5,7 +5,7 @@ put:
   parameters:
     - name: from
       in: query
-      description: The inventaire entity who received the other merge entity.
+      description: The inventaire entity which received the other merge entity.
       type: string
       x-example: inv:d59e3e64f92c6340fbb10c5dcf437d86
       required: true
