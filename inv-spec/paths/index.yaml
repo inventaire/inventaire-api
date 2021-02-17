@@ -49,8 +49,8 @@
 
 /entities?action=create:
   $ref: ./entities/create.yaml
-# /entities?action=exists-or-create-from-seed:
-  # $ref: ./entities/exists-or-create-from-seed.yaml
+/entities?action=resolve:
+  $ref: ./entities/resolve.yaml
 
 /entities?action=update-label:
   $ref: ./entities/update-label.yaml

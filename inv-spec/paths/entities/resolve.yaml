@@ -1,0 +1,16 @@
+post:
+  summary: Find if some entries match server entities
+  parameters:
+    - name: entries
+      in: body
+      description: An object with a key "entries" and an array of objects as value. Each object can contain keys "edition", "works" and/or "authors". "edition" values can either be an object or an array of one element. "works" and "authors" must be arrays of one or several elements.
+      required: true
+      type: object
+      x-example: "{\n  \"entries\": [\n    {\n      \"edition\": [\n        {\n          \"isbn\": \"979-10-209-0050-0\",\n          \"claims\": {\n            \"wdt:P1476\": \"Aimer à en perdre la raison\",\n            \"wdt:P123\": \"wd:Q3236382\",\n            \"wdt:P577\": \"2013-03-20\"\n          },\n          \"image\": \"http://www.editionslesliensquiliberent.fr/images/livre_affiche_355.png\"\n        }\n      ],\n      \"works\": [\n        {\n          \"labels\": {\n            \"fr\": \"Aimer à en perdre la raison\"\n          }\n        }\n      ],\n      \"authors\": [\n        {\n          \"labels\": {\n            \"fr\": \"Maryse Vaillant\"\n          }\n        }\n      ]\n    }\n  ]\n}"
+  tags:
+    - Entities
+  order: -10
+
+responses:
+  '200':
+    $ref: ./partials/200.yaml
