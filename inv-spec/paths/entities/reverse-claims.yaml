@@ -3,7 +3,12 @@ get:
   description: Pass a property and a value, get all the URIs of all the entities that match this claim
   parameters:
     - $ref: ./partials/property.yaml
-    - $ref: ./partials/uri.yaml
+    - name: value
+      in: query
+      description: A claim value (uri, string, id, etc.)
+      required: true
+      type: string
+      x-example: wd:Q892
     - $ref: ../partials/refresh.yaml
 
   tags:
