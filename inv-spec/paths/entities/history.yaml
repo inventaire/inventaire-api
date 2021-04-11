@@ -1,5 +1,7 @@
 get:
   summary: Get entities history as snapshots and diffs
+  description: |
+    **Requires to have admin rights**
   parameters:
     - $ref: ./partials/id.yaml
   tags:
