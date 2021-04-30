@@ -1,0 +1,11 @@
+get:
+  summary: An endpoint to get basic facts from an ISBN
+  parameters:
+    - name: isbn
+      in: query
+      description: "10 or 13, with or without hyphen"
+      required: true
+      type: string
+      x-example: 9782377290888
+  tags:
+    - Data

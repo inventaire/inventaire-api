@@ -1,0 +1,17 @@
+get:
+  summary: Return the allowed values per type for a given property
+  parameters:
+    - name: property
+      in: query
+      description: a property
+      required: true
+      type: string
+      x-example: wdt:P31
+    - name: type
+      in: query
+      description: a type from lib/wikidata/aliases
+      required: true
+      type: string
+      x-example: series
+  tags:
+    - Data

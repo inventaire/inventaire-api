@@ -1,0 +1,19 @@
+get:
+  summary: request an extract to Wikipedia
+  description: |
+    From the most fitting article given the user language preference
+  parameters:
+    - name: lang
+      in: query
+      description: a wikipedia language prefix
+      required: false
+      type: string
+      x-example: en
+    - name: title
+      in: query
+      description: a wikipedia title
+      required: true
+      type: string
+      x-example: The Moonstone
+  tags:
+    - Data
