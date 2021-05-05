@@ -1,13 +1,13 @@
 get:
-  summary: Get an author's works
-  description: Pass an author URI, get uris of all `works`, `series` and `articles` of the entity that match this claim
+  summary: Get the publications of a publisher
+  description: Pass a publisher URI and get URIs of all its `collections` and `editions`
   parameters:
     - name: uri
       in: query
-      description: An author URI
+      description: A publisher URI
       required: true
       type: string
-      x-example: wd:Q2196
+      x-example: wd:Q3208426
     - name: refresh
       in: query
       description: 'Request non-cached data'

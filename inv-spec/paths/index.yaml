@@ -46,6 +46,8 @@
   $ref: ./entities/author-works.yaml
 /entities?action=serie-parts:
   $ref: ./entities/serie-parts.yaml
+/entities?action=publisher-publications:
+  $ref: ./entities/publisher-publications.yaml
 
 /entities?action=create:
   $ref: ./entities/create.yaml

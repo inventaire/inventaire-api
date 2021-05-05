@@ -1,6 +1,6 @@
 get:
-  summary: Get works of a serie
-  description: Pass a serie Uri and get uris of all `works` that associated to it
+  summary: Get a serie's parts
+  description: Pass a serie URI and get the URIs of all `works` and sub-`series` parts
   parameters:
     - name: uri
       in: query
@@ -8,5 +8,12 @@ get:
       required: true
       type: string
       x-example: wd:Q718449
+    - name: refresh
+      in: query
+      description: 'Request non-cached data'
+      required: false
+      type: boolean
+      x-example: false
+      default: false
   tags:
     - Entities
