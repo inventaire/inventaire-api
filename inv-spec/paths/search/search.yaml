@@ -1,0 +1,59 @@
+get:
+  summary: Search for entities (works, humans, genres, publishers, series, collections), users, or groups
+  description: Multiple entities types can be searched at once
+  parameters:
+    - name: types
+      in: query
+      description: Type of search.
+      required: true
+      schema:
+        type: string
+        enum:
+          - works
+          - humans
+          - genres
+          - publishers
+          - series
+          - collections
+          - users
+          - groups
+      x-example: works|series|humans
+    - name: search
+      in: query
+      description: The string to be searched
+      required: true
+      type: string
+      x-example: moon
+    - name: limit
+      in: query
+      description: Maximum number of results returned
+      required: false
+      x-example: 20
+      schema:
+        type: integer
+        default: 10
+        minimum: 1
+        maximum: 100
+    - name: lang
+      in: query
+      description: Preferred language for which the results will be tailored
+      required: false
+      type: string
+      x-example: en
+    - name: exact
+      in: query
+      description: Restrict results to documents with exact word match
+      required: false
+      type: boolean
+      x-example: true
+      default: false
+    - name: min-score
+      in: query
+      description: Minimum matching score (results with a lower score will be ignored)
+      required: false
+      x-example: 5
+      schema:
+        type: integer
+        default: 1
+  tags:
+    - Search

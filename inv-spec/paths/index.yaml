@@ -101,12 +101,8 @@
 /transactions?action=get-messages:
   $ref: ./transactions/get-messages.yaml
 
-/search?types=humans:
-  $ref: ./search/humans.yaml
-/search?types=series:
-  $ref: ./search/series.yaml
-/search?types=works:
-  $ref: ./search/works.yaml
+/search:
+  $ref: ./search/search.yaml
 
 /shelves?action=by-ids:
   $ref: ./shelves/by-ids.yaml
