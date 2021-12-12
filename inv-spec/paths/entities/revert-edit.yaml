@@ -1,0 +1,6 @@
+put:
+  summary: Revert an entity edit
+  parameters:
+    - $ref: ./partials/patch.yaml
+  tags:
+    - Entities

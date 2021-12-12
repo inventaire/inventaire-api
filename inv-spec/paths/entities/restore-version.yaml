@@ -1,0 +1,7 @@
+put:
+  summary: Restores an entity to a past version
+  description: Pass a patch identifying the version to restore
+  parameters:
+    - $ref: ./partials/patch.yaml
+  tags:
+    - Entities
