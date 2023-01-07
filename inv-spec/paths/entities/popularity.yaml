@@ -14,12 +14,5 @@ get:
       type: boolean
       x-example: false
       default: false
-    - name: fast
-      in: query
-      description: Recalculate score when true
-      required: false
-      type: boolean
-      x-example: false
-      default: false
   tags:
     - Entities
