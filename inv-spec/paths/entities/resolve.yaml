@@ -1,12 +1,30 @@
 post:
-  summary: Find if some entries match server entities
+  summary: Find if some entries match existing entities, and optionnaly update and/or enrich the existing entities, and/or create the missing ones.
   parameters:
     - name: entries
       in: body
-      description: An object with a key "entries" and an array of objects as value. Each object can contain keys "edition", "works" and/or "authors". "edition" values can either be an object or an array of one element. "works" and "authors" must be arrays of one or several elements.
+      description: An object with a key "entries" and an array of objects as value. Each object can contain keys "edition", "works" and/or "authors". "edition" must be an object. "works" and "authors" must be arrays of one or several objects.
       required: true
       type: object
-      x-example: "{\n  \"entries\": [\n    {\n      \"edition\": [\n        {\n          \"isbn\": \"979-10-209-0050-0\",\n          \"claims\": {\n            \"wdt:P1476\": \"Aimer à en perdre la raison\",\n            \"wdt:P123\": \"wd:Q3236382\",\n            \"wdt:P577\": \"2013-03-20\"\n          },\n          \"image\": \"http://www.editionslesliensquiliberent.fr/images/livre_affiche_355.png\"\n        }\n      ],\n      \"works\": [\n        {\n          \"labels\": {\n            \"fr\": \"Aimer à en perdre la raison\"\n          }\n        }\n      ],\n      \"authors\": [\n        {\n          \"labels\": {\n            \"fr\": \"Maryse Vaillant\"\n          }\n        }\n      ]\n    }\n  ]\n}"
+      x-example: "[\n  {\n    \"edition\": {\n      \"isbn\": \"9791020900500\",\n      \"claims\": {\n        \"wdt:P1476\": \"Aimer à en perdre la raison\",\n        \"wdt:P123\": \"wd:Q3236382\",\n        \"wdt:P577\": \"2013-03-20\"\n      },\n      \"image\": \"http://www.editionslesliensquiliberent.fr/images/livre_affiche_355.png\"\n    },\n    \"works\": [\n      {\n        \"labels\": {\n          \"fr\": \"Aimer à en perdre la raison\"\n        },\n        \"claims\": {\n          \"wdt:P268\": [\n            \"43677999f\"\n          ]\n        }\n      }\n    ],\n    \"authors\": [\n      {\n        \"uri\": \"wd:Q15714153\"\n      }\n    ]\n  }\n]"
+    - name: create
+      in: body
+      description: If true, non-resolved entities will be created
+      type: boolean
+      x-example: true
+      default: false
+    - name: update
+      in: body
+      description: If true, resolved entities will be updated
+      type: boolean
+      x-example: true
+      default: false
+    - name: enrich
+      in: body
+      description: If true, resolved entities might be enriched with corresponding data found from other data sources. For instance an edition cover might be added, based on the provided ISBN.
+      type: boolean
+      x-example: true
+      default: false
   tags:
     - Entities
   order: -10
