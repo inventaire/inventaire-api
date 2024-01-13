@@ -10,6 +10,6 @@ description: |
 
   Beside this documentation, diving into the code is always an option: everything starts in the [router](https://github.com/inventaire/inventaire/blob/master/server/controllers/routes.coffee), and is then delegated to the [controllers](https://github.com/inventaire/inventaire/tree/master/server/controllers).
 
-  Then, feel welcome to [improve this documentation](https://github.com/inventaire/swagger-ui/tree/master/inv-spec)!
+  Then, feel welcome to [improve this documentation](https://github.com/inventaire/inventaire-api/tree/main/inv-spec)!
 
 version: "1.0.0"
