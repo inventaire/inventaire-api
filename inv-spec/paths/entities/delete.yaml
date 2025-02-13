@@ -1,0 +1,11 @@
+post:
+  summary: Delete an entity
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+
+    See [Who can do what about entities](https://wiki.inventaire.io/wiki/Roles_and_access_levels) for more information
+  parameters:
+    - $ref: ./partials/uri.yaml
+
+  tags:
+    - Entities

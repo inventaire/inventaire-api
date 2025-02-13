@@ -63,6 +63,10 @@
 /entities?action=publisher-publications:
   $ref: ./entities/publisher-publications.yaml
 
+/entities?action=merge:
+  $ref: ./entities/merge.yaml
+/entities?action=delete:
+  $ref: ./entities/delete.yaml
 /entities?action=create:
   $ref: ./entities/create.yaml
 /entities?action=resolve:

@@ -1,0 +1,22 @@
+put:
+  summary: Merge two entities
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+
+    See [Who can do what about entities](https://wiki.inventaire.io/wiki/Roles_and_access_levels) for more information
+  parameters:
+    - name: from
+      in: query
+      description: The inventaire entity ID to merge from. This entity will be deleted after merge.
+      x-example: inv:8b4c37e1c14e04e6a1a28644c78be49c
+      required: true
+    - name: to
+      in: query
+      description: The inventaire entity ID to merge to.
+        The entity will receive the other merge entity.
+      type: string
+      x-example: inv:6e59f968a1cd00dbedeb1964de6eb151
+      required: true
+  tags:
+    - Entities
+  order: -5
