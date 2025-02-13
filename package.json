@@ -55,6 +55,7 @@
     "handlebars": "^4.7.7",
     "jshint-stylish": "^1.0.1",
     "less": "^2.4.0",
+    "live-server": "^1.2.2",
     "mocha": "^2.1.0",
     "multi-file-swagger": "^2.0.0",
     "run-sequence": "^1.2.2",
