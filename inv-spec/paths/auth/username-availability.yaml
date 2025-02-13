@@ -1,0 +1,11 @@
+get:
+  summary: Checks for validity, availability, reserved words
+  parameters:
+    - name: username
+      in: query
+      description: a user username
+      required: true
+      type: string
+      x-example: myusername
+  tags:
+    - Auth

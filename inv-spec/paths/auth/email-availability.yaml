@@ -1,0 +1,11 @@
+get:
+  summary: Checks for validity, availability
+  parameters:
+    - name: email
+      in: query
+      description: an email
+      required: true
+      type: string
+      x-example: foo@bar.buz
+  tags:
+    - Auth

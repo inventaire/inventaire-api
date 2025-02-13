@@ -1,0 +1,29 @@
+post:
+  summary: Sign up
+  description: |
+    No account can be created with a username used by a deleted account.
+
+    Some reverved wording (in server/controllers/user/lib/is_reserved_word.ts) are forbidden as usernames.
+
+    Unicode letters will be normalized.
+  parameters:
+    - name: username
+      in: body
+      description: a user username
+      required: true
+      type: string
+      x-example: myusername
+    - name: email
+      in: body
+      description: an email
+      required: true
+      type: string
+      x-example: foo@bar.buz
+    - name: password
+      in: body
+      description: a user password
+      required: true
+      type: string
+      x-example: mypassword
+  tags:
+    - Auth

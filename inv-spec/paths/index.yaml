@@ -1,5 +1,19 @@
+/auth?action=username-availability:
+  $ref: ./auth/username-availability.yaml
+/auth?action=email-availability:
+  $ref: ./auth/email-availability.yaml
 /auth?action=login:
   $ref: ./auth/login.yaml
+/auth?action=email-confirmation:
+  $ref: ./auth/email-confirmation.yaml
+/auth?action=logout:
+  $ref: ./auth/logout.yaml
+/auth?action=reset-password:
+  $ref: ./auth/reset-password.yaml
+/auth?action=signup:
+  $ref: ./auth/signup.yaml
+/auth?action=update-password:
+  $ref: ./auth/update-password.yaml
 
 /user:
   get:

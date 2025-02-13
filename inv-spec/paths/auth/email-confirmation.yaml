@@ -1,0 +1,8 @@
+post:
+  summary: Email confirmation
+  description: |
+    **Requires to be [authentified](/#!Auth/post_auth_action_login)**
+
+    Sends an confirmation email to the user's request email, only if email has not been verified already.
+  tags:
+    - Auth

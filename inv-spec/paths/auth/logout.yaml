@@ -1,0 +1,6 @@
+post:
+  summary: Log out
+  description: |
+    Request will be redirected to the landing page
+  tags:
+    - Auth
