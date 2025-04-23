@@ -7,5 +7,12 @@ get:
       required: false
       type: string
       x-example: e94ed47d24e967b3a7e41e7e95a265d4
+    - name: with-items
+      in: query
+      description: "Response includes an `items` key, the value is an array of items' ids"
+      required: false
+      type: boolean
+      x-example: false
+      default: false
   tags:
     - Shelves
