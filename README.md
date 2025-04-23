@@ -11,9 +11,8 @@ Until we [find an elegant way to generate the documentation automatically](https
 3. Share your changes by submitting a pull request.
 
 ### How to view
-To view the documentation locally you need NodeJS v8 and an HTTP file server, or Docker.
+To view the documentation locally you need NodeJS v8 and an HTTP file server.
 
-#### With NodeJS v8
 0. If you installed Node with [nvm](https://github.com/creationix/nvm), you can temporarly (just for the present terminal session) switch to NodeJS v8 by running `nvm use 8`
 1. Install the dependencies: `npm install`
 2. Build the documentation: `npm run build`
@@ -22,15 +21,3 @@ To view the documentation locally you need NodeJS v8 and an HTTP file server, or
 - To update the documentation UI: `npm run build`
 - To update just the API specs: `npm run update-spec`
 - To update just the API specs on every file change: `npm run watch-spec`
-
-#### With Docker
-If you don't want to install NodeJS on your machine, you can use it in a Docker container
-
-1. Install the dependencies: `docker run -it --rm -u 'node' -v $(pwd):/data -w /data node:8 npm install`
-2. Build the documentation: `docker run -it --rm -v $(pwd):/data -w /data node:8 npm run build`
-3. Launch a file web server: `cd dist && python -m SimpleHTTPServer`
-4. Access the documentation through your browser at http://localhost:8080.
-
-- To update the UI: `docker run -it --rm -v $(pwd):/data -w /data node:8 npm run build`
-- To update the API specs alone: `docker run -it --rm -v $(pwd):/data -w /data node:8 npm run update-spec`
-- To delete the generated documentation: `rm -rf ./dist`
