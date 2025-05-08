@@ -1,0 +1,16 @@
+get:
+  summary: An endpoint to get summaries
+  parameters:
+    - name: uri
+      in: query
+      description: An ISBN
+      required: true
+      type: string
+      x-example: 9782377290888
+    - name: langs
+      description: Filter to get only the desired language
+      required: false
+      type: string
+      x-example: fr
+  tags:
+    - Data
