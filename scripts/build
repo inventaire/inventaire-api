@@ -4,7 +4,8 @@ NODE_VERSION=$(node -v)
 
 [[ "${NODE_VERSION:0:2}" == "v8" ]] || {
   # gulp crashes with higher versions https://github.com/gulpjs/gulp/issues/2162
-  echo "building requires Node v8.x.x"
+  echo "Building requires Node v8.x.x"
+  echo "Note that to just build the spec file, you can run 'npm run update-spec', with a more recent Node version"
   exit 1
 }
 
