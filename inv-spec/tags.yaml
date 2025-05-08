@@ -1,27 +1,27 @@
 -
   name: Auth
-  description: Login and stuffs ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/auth/auth.js))
+  description: Login and stuffs ([code](https://git.inventaire.io/inventaire/blob/main/server/controllers/auth/auth.ts))
 -
   name: User
-  description: Read and edit authentified user data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/user/user.js))
+  description: Read and edit authentified user data ([code](https://git.inventaire.io/inventaire/blob/main/server/controllers/user/user.ts))
 -
   name: Items
-  description: What users' inventories are made of ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/items/items.js))
+  description: What users' inventories are made of ([code](https://git.inventaire.io/inventaire/blob/main/server/controllers/items/items.ts))
 -
   name: Entities
-  description: Think books, authors, series data (see [entities map](https://inventaire.github.io/entities-map/)) ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/entities/entities.js))
+  description: Think books, authors, series data (see [wiki](https://wiki.inventaire.io/wiki/Entities_data#Data_structure)) ([code](https://git.inventaire.io/inventaire/blob/main/server/controllers/entities/entities.ts))
 -
   name: Users
-  description: Get/find other users data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/users/users.js))
+  description: Get/find other users data ([code](https://git.inventaire.io/inventaire/blob/main/server/controllers/users/users.ts))
 -
   name: Groups
-  description: Read and edit users groups data ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/groups/groups.js))
+  description: Read and edit users groups data ([code](https://git.inventaire.io/inventaire/blob/main/server/controllers/groups/groups.ts))
 -
   name: Transactions
-  description: When users request each others items ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/transactions/transactions.js))
+  description: When users request each others items ([code](https://git.inventaire.io/inventaire/blob/main/server/controllers/transactions/transactions.ts))
 -
   name: Search
-  description: The generalist search endpoint ([code](https://github.com/inventaire/inventaire/blob/master/server/controllers/search/search.js))
+  description: The generalist search endpoint ([code](https://git.inventaire.io/inventaire/blob/main/server/controllers/search/search.ts))
 -
   name: Shelves
   description: List of items. Items must belong to the shelf' owner. An owner can add or remove items from their own shelf. An owner must be a user
